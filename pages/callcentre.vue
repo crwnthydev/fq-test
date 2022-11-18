@@ -9,10 +9,10 @@ export default Vue.extend({
     layout (context) {
         return 'default'
     },
-    name: 'IndexPage',
+    name: 'ССPage',
     head() {
         return {
-        title: 'Test | Опросы'
+            title: 'Test | Колл-центр'
         }
     }
 })

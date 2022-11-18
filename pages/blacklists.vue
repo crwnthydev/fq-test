@@ -2,17 +2,17 @@
 
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
     layout (context) {
         return 'default'
     },
-    name: 'IndexPage',
+    name: 'BlacklistPage',
     head() {
         return {
-        title: 'Test | Опросы'
+            title: 'Test | Черные списки'
         }
     }
 })
