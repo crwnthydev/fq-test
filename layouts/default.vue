@@ -3,6 +3,7 @@
         <Header></Header>
         <Sidebar></Sidebar>
         <main class="main">
+            <Breadcrumbs />
             <Nuxt />
         </main>
     </div>
@@ -11,11 +12,13 @@
 <script>
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export default {
     components: {
         Header,
-        Sidebar
+        Sidebar,
+        Breadcrumbs
     }
 }
 </script>
@@ -37,6 +40,9 @@ export default {
         }
         .main {
             grid-area: content;
+        }
+        .section {
+            padding: 70px;
         }
     }
 </style>

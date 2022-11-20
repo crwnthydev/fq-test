@@ -44,7 +44,7 @@ export default {
             widows: 100%;
             height: 100%;
             border: 2px solid grey;
-            transition: all 0.4s linear;
+            transition: 0;
             color: black;
             padding: 10px;
             font-size: 16px;
@@ -57,6 +57,7 @@ export default {
             }
 
             &:hover {
+                transition: all 0.3s linear;
                 color: green;
                 border-color: green;
             }

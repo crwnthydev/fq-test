@@ -1,5 +1,7 @@
 <template>
-
+    <section class="section">
+        <h1>Колл-центр</h1>
+    </section>
 </template>
 
 <script>

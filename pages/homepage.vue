@@ -1,20 +1,20 @@
 <template>
     <section class="section">
-        <h1>Черные списки</h1>
+        <h1>Главная</h1>
     </section>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend({
     layout (context) {
         return 'default'
     },
-    name: 'BlacklistPage',
+    name: 'Homepage',
     head() {
         return {
-            title: 'Test | Черные списки'
+            title: 'Test | Главная'
         }
     }
 })

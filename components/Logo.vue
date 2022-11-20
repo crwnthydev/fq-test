@@ -9,10 +9,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: red;
-}
+    .logo {
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        background-color: red;
+    }
 </style>
