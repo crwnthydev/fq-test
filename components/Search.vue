@@ -31,6 +31,7 @@ export default {
         &__input {
             background-color: white;
             border: 1px solid grey;
+            border-radius: 6px;
             width: 100%;
             height: 100%;
             padding: 10px 7px;

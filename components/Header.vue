@@ -29,5 +29,13 @@ export default {
         align-items: center;
         border-bottom: 1px solid grey;
         padding: 30px 70px;
+
+        @media (max-width: 900px) {
+            justify-content: flex-end;
+            padding: 30px;
+            .search {
+                display: none;
+            }
+        }
     }
 </style>

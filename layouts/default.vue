@@ -30,19 +30,30 @@ export default {
         grid-template-areas:
             "sidebar header"
             "sidebar content";
-        grid-template-columns: 256px auto;
+        grid-template-columns: 210px auto;
         grid-template-rows: 80px auto;
+        @media (max-width: 900px) {
+            grid-template-areas:
+                "header header"
+                "content content";
+        }
         .header {
             grid-area: header;
         }
         .sidebar {
             grid-area: sidebar;
+            @media (max-width: 900px) {
+                display: none;
+            }
         }
         .main {
             grid-area: content;
         }
         .section {
-            padding: 70px;
+            padding: 30px 70px;
+            @media (max-width: 900px) {
+                padding: 30px;
+            }
         }
     }
 </style>

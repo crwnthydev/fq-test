@@ -14,19 +14,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'Breadcrumbs',
-  data() {
-    return {
-        routes: {
-            index: 'Опросы',
-            users: 'Пользователи',
-            blacklists: 'Черные списки',
-            callcentre: 'Колл-центр'
-        }
-    }
-  },
   computed: {
+    ...mapState({
+        crumbRoutes: state => state.crumbRoutes
+    }),
     crumbs () {
       const pathArray = this.$route.path.split('/')
       pathArray.shift()
@@ -35,7 +30,7 @@ export default {
           address: breadcrumbArray[idx - 1]
             ? '/' + breadcrumbArray[idx - 1].path + '/' + path
             : '/' + path,
-          title: this.routes[this.$route.name]
+          title: this.crumbRoutes[this.$route.name]
         })
         return breadcrumbArray
       }, [])
@@ -47,7 +42,7 @@ export default {
 
 <style scoped lang="scss">
     .breadcrumbs {
-        padding: 30px 70px;
+        padding: 30px 70px 10px 70px;
         list-style-type: none;
         margin: 0;
         display: flex;
@@ -79,6 +74,9 @@ export default {
                     display: none;
                 }
             }
+        }
+        @media (max-width: 900px) {
+            padding: 30px;
         }
     }
 </style>

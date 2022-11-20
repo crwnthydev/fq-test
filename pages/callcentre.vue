@@ -11,7 +11,7 @@ export default Vue.extend({
     layout (context) {
         return 'default'
     },
-    name: 'ССPage',
+    name: 'callCenterPage',
     head() {
         return {
             title: 'Test | Колл-центр'

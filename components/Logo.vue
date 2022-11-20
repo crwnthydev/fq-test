@@ -1,5 +1,5 @@
 <template>
-    <div class="logo"></div>
+    <nuxt-link to="/homepage" class="logo"></nuxt-link>
 </template>
 
 <script>

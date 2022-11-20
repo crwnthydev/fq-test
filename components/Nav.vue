@@ -50,6 +50,7 @@ export default {
             font-size: 16px;
             font-weight: 500;
             text-align: center;
+            border-radius: 6px;
 
             &.nuxt-link-exact-active {
                 color: lightseagreen;

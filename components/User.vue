@@ -1,5 +1,5 @@
 <template>
-    <div class="user">
+    <nuxt-link to="/account" class="user">
         <div class="user__avatar">
             <img :src="require(`~/assets/images/common/${userData.avatar}`)" alt="">
         </div>
@@ -7,19 +7,19 @@
             <p class="user__name">{{ userData.name }}</p>
             <p class="user__status">{{ userData.status }}</p>
         </div>
-    </div>
+    </nuxt-link>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 
 export default {
-  name: 'User',
-  computed: {
-    ...mapState({
-      userData: state => state.currentUser
-  })
-}
+    name: 'User',
+    computed: {
+        ...mapState({
+            userData: state => state.currentUser
+        })
+    }
 }
 </script>
 
